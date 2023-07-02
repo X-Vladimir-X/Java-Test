@@ -1,7 +1,9 @@
 
 import java.util.*;
+import java.io.IOException;
+import java.util.logging.*;
 
-public class work3 {
+public class work4 {
     private static double prevResult = 0;
 
     public static void main(String[] args) {
@@ -16,9 +18,13 @@ public class work3 {
             if (input.charAt(0) == '+' || input.charAt(0) == '-' || input.charAt(0) == '*' || input.charAt(0) == '/') {
                 input = prevResult + input;
             }
+            Object helper;
             prevResult = helper.evaluate(input);
             System.out.println("Результат: " + prevResult);
         }
         sc.close();
+
+        logger.log(Level.WARNING, "Тестовое логирование 1");
+        logger.info("Тестовое логирование 2");
     }
 }

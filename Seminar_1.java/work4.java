@@ -2,8 +2,8 @@ package Seminar_1.java;
 
 import java.util.Scanner;
 
-public class EquationSolver {
-    Scanner scanner = new Scanner(System.in);System.out.print("Введите уравнение: ");
+public class work4 {
+    Scanner scanner = new Scanner(System.in);System.out.printLn("Введите уравнение: ");
     String equation = scanner.nextLine();
     String[] parts = equation.split("\s*[+=]\s");
 
